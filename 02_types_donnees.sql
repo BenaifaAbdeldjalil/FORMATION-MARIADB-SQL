@@ -1,15 +1,13 @@
 -- =========================================================
--- PARTIE 02 : TYPES DE DONNÉES
+-- PARTIE 02 : TYPES DE DONNEES
 -- =========================================================
-CREATE TABLE exemple_types (
+-- Nous utiliserons : INT, VARCHAR, DECIMAL, DATE, BOOLEAN, TEXT
+-- Exemple :
+CREATE TABLE test_types (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(50),
-    description TEXT,
-    prix DECIMAL(10,2),
+    note DECIMAL(4,2),
     actif BOOLEAN,
-    date_creation DATE
+    date_naissance DATE,
+    commentaire TEXT
 );
-
--- EXERCICE : créer table produit avec nom, prix, stock
--- CORRECTION
--- CREATE TABLE produit (id INT AUTO_INCREMENT PRIMARY KEY, nom VARCHAR(50), prix DECIMAL(10,2), stock INT);
