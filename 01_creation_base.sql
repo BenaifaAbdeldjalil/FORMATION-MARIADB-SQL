@@ -1,15 +1,13 @@
 -- =========================================================
--- PARTIE 01 : CRÉATION DE LA BASE DE DONNÉES
+-- PARTIE 01 : CREATION DE LA BASE
 -- =========================================================
-CREATE DATABASE formation_mariadb
+CREATE DATABASE gestion_ecole
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_general_ci;
 
-USE formation_mariadb;
+USE gestion_ecole;
 
--- EXERCICE
--- Créer une base ecole_db et vérifier qu’elle est active
--- CORRECTION
--- CREATE DATABASE ecole_db CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
--- USE ecole_db;
+-- Vérification
+-- SHOW DATABASES;
 -- SELECT DATABASE();
+
