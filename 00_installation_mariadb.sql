@@ -1,0 +1,86 @@
+-- =========================================================
+-- PARTIE 00 : INSTALLATION ET MISE EN PLACE DE MARIADB
+-- =========================================================
+--
+-- OBJECTIF :
+-- Installer MariaDB, vérifier son fonctionnement
+-- et préparer l’environnement de travail SQL.
+--
+-- =========================================================
+-- 1) INSTALLATION DE MARIADB
+-- =========================================================
+--
+-- ▶ SOUS WINDOWS
+-- 1. Aller sur : https://mariadb.org/download/
+-- 2. Télécharger MariaDB Community Server
+-- 3. Lancer l’installateur
+-- 4. Choisir :
+--    - MariaDB Server
+--    - Client
+-- 5. Définir le mot de passe ROOT
+-- 6. Laisser le port par défaut : 3306
+--
+-- ▶ SOUS LINUX (Ubuntu / Debian)
+-- sudo apt update
+-- sudo apt install mariadb-server
+-- sudo systemctl start mariadb
+-- sudo systemctl enable mariadb
+--
+-- ▶ SOUS MACOS (Homebrew)
+-- brew install mariadb
+-- brew services start mariadb
+--
+-- =========================================================
+-- 2) SÉCURISATION DE L’INSTALLATION
+-- =========================================================
+--
+-- Lancer la commande :
+-- sudo mysql_secure_installation
+--
+-- Étapes recommandées :
+-- - définir mot de passe root
+-- - supprimer utilisateurs anonymes
+-- - supprimer base test
+-- - désactiver accès root distant
+--
+-- =========================================================
+-- 3) CONNEXION À MARIADB
+-- =========================================================
+--
+-- Connexion en ligne de commande :
+-- mysql -u root -p
+--
+-- Vérifier la version :
+-- SELECT VERSION();
+--
+-- =========================================================
+-- 4) COMMANDES DE BASE MARIADB
+-- =========================================================
+--
+-- Afficher les bases de données :
+-- SHOW DATABASES;
+--
+-- Créer une base :
+-- CREATE DATABASE test_install;
+--
+-- Utiliser une base :
+-- USE test_install;
+--
+-- Afficher les tables :
+-- SHOW TABLES;
+--
+-- Quitter :
+-- EXIT;
+--
+-- =========================================================
+-- 5) OUTILS CONSEILLÉS
+-- =========================================================
+--
+-- Interfaces graphiques possibles :
+-- - phpMyAdmin
+-- - HeidiSQL (Windows)
+-- - DBeaver (multi-plateforme)
+--
+-- =========================================================
+-- FIN PARTIE 00
+-- =========================================================
