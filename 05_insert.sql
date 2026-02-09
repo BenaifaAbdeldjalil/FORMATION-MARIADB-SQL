@@ -1,6 +1,14 @@
 -- =========================================================
 -- PARTIE 05 : INSERTION DE DONNEES COHERENTES
 -- =========================================================
+-- Théorie :
+-- L'instruction INSERT INTO permet d'ajouter des lignes dans une table.
+-- Il est important d'insérer les données dans le bon ordre pour respecter les contraintes.
+-- Par exemple, il faut créer les classes et les professeurs avant d'insérer les cours et les élèves.
+-- Ensuite, on peut insérer les notes en respectant les clés étrangères.
+--
+-- Exemple pratique : insertion cohérente dans toutes les tables
+
 -- Insertion des classes
 INSERT INTO classes (nom, niveau) VALUES
 ('6ème A', '6ème'),
